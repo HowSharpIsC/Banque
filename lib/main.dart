@@ -63,3 +63,57 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+class LoginScreen extends StatefulWidget {
+  LoginScreen({Key key}) : super(key: key);
+
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+ @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body:Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/background-login.jpg'),
+            fit: BoxFit.cover
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// class Login extends State<LoginScreen> {
+//  @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text("Login"),
+//       ),
+//       body: Column(
+//         children:[
+//           Container(
+//             margin: EdgeInsets.all(2.0) ,
+//             child: RaisedButton(
+//               onPressed: (){},
+//               child: Text('Login'),
+//             ),
+//           ),
+          
+//           Card(
+//             child: Column(
+//               children: <Widget>[
+//                 Image.asset('assets/bank.jpg'),
+//                 Text('Hello Bank')
+//               ],
+//             ),
+//           )
+//         ],
+//       ),
+//     );
+//   }
+// }
